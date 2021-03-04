@@ -3,12 +3,12 @@ package ru.oshkina.demo4;
 
 public class Song implements Comparable<Song> {
     //Четыре переменных экземпляра для четырех атрибутов песни, получаемых из файла
-    private String title;
-    private String artist;
-    private String rating;
+    private final String title;
+    private final String artist;
+    private final String rating;
     //BPM (bpm, англ. beats per minute, удары в минуту) в музыке — показатель, определяющий
     // скорость исполнения или воспроизведения композиции
-    private String bpm;
+    private final String bpm;
 
     /**
      * Переменные, которые передаются в конструктор при создании нового объекта Song
