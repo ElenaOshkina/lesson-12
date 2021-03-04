@@ -50,4 +50,14 @@ public class Song {
         return title;
     }
 
+
+//    @Override
+//    public String toString() {
+//        return "Song{" +
+//                "title='" + title + '\'' +
+//                ", artist='" + artist + '\'' +
+//                ", rating='" + rating + '\'' +
+//                ", bpm='" + bpm + '\'' +
+//                '}';
+//    }
 }

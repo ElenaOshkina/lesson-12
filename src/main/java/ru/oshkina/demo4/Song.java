@@ -1,7 +1,7 @@
 package ru.oshkina.demo4;
 
 
-public class Song implements Comparable<Song> {
+public class Song  {
     //Четыре переменных экземпляра для четырех атрибутов песни, получаемых из файла
     private final String title;
     private final String artist;
@@ -25,10 +25,10 @@ public class Song implements Comparable<Song> {
         bpm = b;
     }
 
-    @Override
-    public int compareTo(Song o) {
-        return title.compareTo(o.getTitle());
-    }
+//    @Override
+//    public int compareTo(Song o) {
+//        return title.compareTo(o.getTitle());
+//    }
 
     public String getArtist() {
         return artist;
@@ -53,6 +53,6 @@ public class Song implements Comparable<Song> {
      * при передаче каждого элемента списка в println()
      */
     public String toString() {
-        return title;
+        return title + " " + artist;
     }
 }

@@ -25,10 +25,10 @@ public class Song implements Comparable<Song> {
         bpm = b;
     }
 
-    @Override
-    public int compareTo(Song o) {
-        return title.compareTo(o.getTitle());
-    }
+//    @Override
+//    public int compareTo(Song o) {
+//        return title.compareTo(o.getTitle());
+//    }
 
     public String getArtist() {
         return artist;
@@ -54,5 +54,10 @@ public class Song implements Comparable<Song> {
      */
     public String toString() {
         return title;
+    }
+
+    @Override
+    public int compareTo(Song o) {
+        return title.compareTo(o.getTitle());
     }
 }

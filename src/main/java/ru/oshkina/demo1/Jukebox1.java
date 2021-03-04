@@ -20,14 +20,6 @@ public class Jukebox1
     public void go() {
         getSongs();
         System.out.println(songList);
-
-        LinkedList<String> songList = new LinkedList<>();
-        songList.add("Pink Moon");
-        songList.add("Shiva Moon");
-
-        songList.add(0, "Listen");
-        System.out.println(songList); //[Listen, Pink Moon, Shiva Moon]
-
     }
 
     /**
@@ -43,8 +35,14 @@ public class Jukebox1
             while ((line = reader.readLine()) != null) {
                 addSong(line);
             }
-        } catch (Exception ex) { ex.printStackTrace(); }
+        } catch (Exception ex) {
+            //ex.printStackTrace();
+            System.out.println("Произошла ошибка во время чтения из файла");
+        }
     }
+
+    // [1] -> [4] ->[6]-> [4]-> [7]
+    //[1][4][0][5][6][7]
 
     /**
      * Разбиваем содержимое строки "имя исполнителя/название пеесни"

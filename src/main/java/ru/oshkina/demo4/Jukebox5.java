@@ -15,11 +15,11 @@ public class Jukebox5 {
     public void go() {
         getSongs();
         System.out.println(songList);
-        Collections.sort(songList);
-        System.out.println(songList);
+        //Collections.sort(songList);
+        //System.out.println(songList);
 
         ArtistCompare artistCompare = new ArtistCompare();
-        Collections.sort(songList, artistCompare);
+        songList.sort(artistCompare);
 
         System.out.println(songList);
     }
@@ -28,7 +28,7 @@ public class Jukebox5 {
         try {
             File file = new File(Util.PATH + "SongListMore.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
                 addSong(line);
             }

@@ -24,9 +24,8 @@ public class Jukebox2 {
         getSongs();
         System.out.println(songList);
 
-        //Collections.sort(songList); //сортирует список песен в алфавитном порядке
-        //System.out.println(songList);;
-
+       // Collections.sort(songList); //сортирует список песен в алфавитном порядке
+        System.out.println(songList);;
     }
 
     /**
@@ -34,7 +33,7 @@ public class Jukebox2 {
      */
     void getSongs() {
         try {
-            File file = new File(Util.PATH + "SongList.txt");
+            File file = new File(Util.PATH + "SongListMore.txt");
             //BufferedReader читает текст из потока ввода символов,
             // буферизуя прочитанные символы, чтобы обеспечить эффективное считывание символов, массивов и строк
             BufferedReader reader = new BufferedReader(new FileReader(file));
